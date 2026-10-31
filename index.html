@@ -9,5 +9,13 @@
 <h1>Hallo, ich bin Max</h1>
 <p>Diese Seite habe ich selbst geschrieben.</p>
 <p>Zweite Fassung, veröffentlicht mit git push.</p>
-</body>
+<button onclick="zaehlen()">Klick mich</button>
+<p id="zahl">Noch nicht geklickt.</p>
+<script>
+let klicks = 0;
+function zaehlen() {
+  klicks = klicks + 1;
+  document.getElementById("zahl").textContent = "Geklickt: " + klicks + " Mal";
+}
+</script></body>
 </html>
